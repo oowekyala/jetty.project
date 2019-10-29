@@ -70,7 +70,7 @@ public class WebAppClassLoader extends URLClassLoader implements ClassVisibility
 {
     static
     {
-        registerAsParallelCapable();
+        //registerAsParallelCapable();
     }
 
     private static final Logger LOG = Log.getLogger(WebAppClassLoader.class);
