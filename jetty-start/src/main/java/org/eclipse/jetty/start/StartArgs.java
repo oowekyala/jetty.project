@@ -77,7 +77,7 @@ public class StartArgs
         // Use jetty-version.properties values
         if (ver == null)
         {
-            URL url = Thread.currentThread().getContextClassLoader().getResource("jetty-version.properties");
+            URL url = StartArgs.class.getResource("jetty-version.properties");
             if (url != null)
             {
                 try (InputStream in = url.openStream())

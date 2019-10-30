@@ -1,0 +1,442 @@
+[
+{
+  "name":"java.lang.Boolean",
+  "fields":[{"name":"TYPE"}],
+  "methods":[
+    {"name":"<init>","parameterTypes":["java.lang.String"] }, 
+    {"name":"valueOf","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"java.lang.Byte",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.Double",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.Float",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.Integer",
+  "fields":[{"name":"TYPE"}],
+  "methods":[
+    {"name":"<init>","parameterTypes":["java.lang.String"] }, 
+    {"name":"valueOf","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"java.lang.Long",
+  "methods":[
+    {"name":"<init>","parameterTypes":["java.lang.String"] }, 
+    {"name":"valueOf","parameterTypes":["java.lang.String"] }
+  ]
+},
+{
+  "name":"java.lang.Short",
+  "methods":[{"name":"valueOf","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.lang.management.ManagementFactory",
+  "methods":[{"name":"getRuntimeMXBean","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.management.RuntimeMXBean",
+  "methods":[{"name":"getUptime","parameterTypes":[] }]
+},
+{
+  "name":"java.security.DomainLoadStoreParameter",
+  "methods":[{"name":"<init>","parameterTypes":["java.net.URI","java.util.Map"] }]
+},
+{
+  "name":"javax.net.ssl.SSLParameters",
+  "methods":[{"name":"setUseCipherSuitesOrder","parameterTypes":["boolean"] }]
+},
+{
+  "name":"javax.servlet.GenericServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"javax.servlet.http.HttpServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"javax.servlet.jsp.JspContext"
+},
+{
+  "name":"org.apache.jasper.servlet.JspServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.apache.tomcat.util.descriptor.tld.TagXml",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.tomcat.util.descriptor.tld.TaglibXml",
+  "allPublicMethods":true
+},
+{
+  "name":"org.apache.tomcat.util.descriptor.tld.TldRuleSet$Attribute",
+  "allPublicMethods":true
+},
+{
+  "name":"org.apache.tomcat.util.descriptor.tld.TldRuleSet$Variable",
+  "methods":[{"name":"setDeclare","parameterTypes":["boolean"] }]
+},
+{
+  "name":"org.apache.tomcat.util.descriptor.tld.ValidatorXml",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.annotations.AnnotationConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.deploy.DeploymentManager",
+  "allPublicMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.deploy.PropertiesConfigurationManager",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.deploy.providers.ScanningAppProvider",
+  "methods":[{"name":"setMonitoredDirName","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.eclipse.jetty.deploy.providers.WebAppProvider",
+  "allPublicMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.example.asyncrest.AbstractRestServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.eclipse.jetty.example.asyncrest.AsyncRestServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.example.asyncrest.SerialRestServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.http.CookieCompliance",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.http.HttpCompliance",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.io.ArrayByteBufferPool",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.jndi.java.javaNameParser",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.jsp.JettyJspServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.plus.jndi.NamingDump",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.plus.webapp.EnvConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.plus.webapp.PlusConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.plus.webapp.PlusDescriptorProcessor",
+  "methods":[
+    {"name":"visitEnvEntry","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitMessageDestinationRef","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitPostConstruct","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitPreDestroy","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitResourceEnvRef","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitResourceRef","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }
+  ]
+},
+{
+  "name":"org.eclipse.jetty.security.ConstraintSecurityHandler",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.server.HomeBaseWarning",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.HttpConfiguration",
+  "allPublicMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.HttpConnectionFactory",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.MultiPartFormDataCompliance",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.server.Server",
+  "allPublicMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.ServerConnector",
+  "allPublicMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.ServerConnector$ServerConnectorManager",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.server.handler.ContextHandlerCollection",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.handler.DefaultHandler",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.server.handler.HandlerCollection",
+  "allPublicConstructors":true,
+  "methods":[{"name":"setHandlers","parameterTypes":["org.eclipse.jetty.server.Handler[]"] }]
+},
+{
+  "name":"org.eclipse.jetty.servlet.DefaultServlet",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.servlet.listener.ELContextCleaner",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.servlet.listener.IntrospectorCleaner",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.util.StringUtil",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.util.log.Log",
+  "methods":[{"name":"getRootLogger","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.util.log.StdErrLog",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.util.thread.QueuedThreadPool",
+  "allPublicConstructors":true,
+  "methods":[
+    {"name":"setDetailedDump","parameterTypes":["boolean"] }, 
+    {"name":"setIdleTimeout","parameterTypes":["int"] }, 
+    {"name":"setMaxThreads","parameterTypes":["int"] }, 
+    {"name":"setMinThreads","parameterTypes":["int"] }, 
+    {"name":"setReservedThreads","parameterTypes":["int"] }
+  ]
+},
+{
+  "name":"org.eclipse.jetty.util.thread.ScheduledExecutorScheduler",
+  "allPublicConstructors":true
+},
+{
+  "name":"org.eclipse.jetty.webapp.ClasspathPattern$ByLocationOrModule",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.ClasspathPattern$ByPackageOrName",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.Configuration$ClassList",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.webapp.FragmentConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.JettyWebXmlConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.MetaInfConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.StandardDescriptorProcessor",
+  "methods":[
+    {"name":"visitContextParam","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitDenyUncoveredHttpMethods","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitDisplayName","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitDistributable","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitErrorPage","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitFilter","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitFilterMapping","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitJspConfig","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitListener","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitLocaleEncodingList","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitLoginConfig","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitMimeMapping","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitSecurityConstraint","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitSecurityRole","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitServlet","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitServletMapping","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitSessionConfig","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitTagLib","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }, 
+    {"name":"visitWelcomeFileList","parameterTypes":["org.eclipse.jetty.webapp.WebAppContext","org.eclipse.jetty.webapp.Descriptor","org.eclipse.jetty.xml.XmlParser$Node"] }
+  ]
+},
+{
+  "name":"org.eclipse.jetty.webapp.WebAppContext",
+  "allPublicMethods":true
+},
+{
+  "name":"org.eclipse.jetty.webapp.WebInfConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.webapp.WebXmlConfiguration",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.client.XmlBasedHttpClientProvider",
+  "methods":[{"name":"get","parameterTypes":["org.eclipse.jetty.websocket.common.scopes.WebSocketContainerScope"] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.BooleanDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.ByteArrayDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.ByteBufferDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.ByteDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.CharacterDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.DoubleDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.FloatDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.InputStreamDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.IntegerDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.LongDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.PongMessageDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.ReaderDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.ShortDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.decoders.StringDecoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.BooleanEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.ByteArrayEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.ByteBufferEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.ByteEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.CharacterEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.DoubleEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.FloatEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.IntegerEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.LongEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.ShortEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.websocket.jsr356.encoders.StringEncoder",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.eclipse.jetty.xml.XmlConfiguration",
+  "methods":[{"name":"main","parameterTypes":["java.lang.String[]"] }]
+}
+]

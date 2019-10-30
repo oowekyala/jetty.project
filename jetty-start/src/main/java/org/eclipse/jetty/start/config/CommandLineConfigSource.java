@@ -110,7 +110,7 @@ public class CommandLineConfigSource implements ConfigSource
         // Attempt to find path relative to content in jetty's start.jar
         // based on lookup for the Main class (from jetty's start.jar)
         String classRef = "org/eclipse/jetty/start/Main.class";
-        URL jarfile = this.getClass().getClassLoader().getResource(classRef);
+        URL jarfile = CommandLineConfigSource.class.getResource(classRef);
         if (jarfile != null)
         {
             Matcher m = Pattern.compile("jar:(file:.*)!/" + classRef).matcher(jarfile.toString());
