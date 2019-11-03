@@ -20,25 +20,35 @@ cp "$SCRIPTD/reflection.json" "$WD"
 
 pushd "$WD"
 
+explode() {
+    find "$1" -name '*.jar' -exec unzip -q -o {} -d explosion \;
+}
+
+
+mkdir explosion
+explode distribution/lib
+
 # Libs extracted from war
 mkdir war-exploded
 unzip "$APP_JAR_PATH" -d war-exploded
-warlibs=$(find war-exploded -name '*.jar' | paste -sd ':' -)
+explode war-exploded
+
+#warlibs=$(find war-exploded -name '*.jar' | paste -sd ':' -)
 
 # Libs from jetty.home
-libs=$(find distribution/lib -name '*.jar' | paste -sd ':' -)
+#libs=$(find distribution/lib -name '*.jar' | paste -sd ':' -)
 
 "$GRAAL_HOME/bin/native-image" \
     -J-Xmx4g \
     -jar distribution/start.jar \
-    --no-server \
-    --verbose \
-    --report-unsupported-elements-at-runtime \
-    --enable-http \
-    --class-path "$libs:$warlibs" \
     -H:+ReportExceptionStackTraces \
     "-H:ReflectionConfigurationFiles=$SCRIPTD/conf/reflect-config.json" \
-    "-H:ResourceConfigurationFiles=$SCRIPTD/conf/resource-config.json"  
+    "-H:ResourceConfigurationFiles=$SCRIPTD/conf/resource-config.json" \
+    --no-server \
+    --verbose \
+    --enable-http \
+    --class-path "$WD/explosion" \
+    --allow-incomplete-classpath
 
 cp start distribution
 cd distribution
