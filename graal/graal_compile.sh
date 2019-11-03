@@ -1,9 +1,9 @@
 #!/bin/bash
-# Must be run from root dir (above jetty.project)
+# Must be run from jetty root dir (above graal)
 # You need an env variable GRAAL_HOME, root of your graal distro (above bin)
 
 
-JETTY_SRC_D="$(pwd)/jetty.project"
+JETTY_SRC_D="$(pwd)"
 SCRIPTD="$JETTY_SRC_D/graal"
 WD=$(mktemp -d --suffix='-jetty-graal-compile')
 
