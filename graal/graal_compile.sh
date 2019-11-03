@@ -34,6 +34,7 @@ libs=$(find distribution/lib -name '*.jar' | paste -sd ':' -)
     --no-server \
     --verbose \
     --enable-http \
+     --report-unsupported-elements-at-runtime \
     --class-path "$libs:$warlibs" \
     -H:+ReportExceptionStackTraces \
     "-H:ReflectionConfigurationFiles=$SCRIPTD/conf/reflect-config.json" \
