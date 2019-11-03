@@ -1,5 +1,6 @@
 #!/bin/bash
 # Must be run from root dir (above jetty.project)
+# You need an env variable GRAAL_HOME, root of your graal distro (above bin)
 
 
 JETTY_SRC_D="$(pwd)/jetty.project"
