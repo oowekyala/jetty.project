@@ -1,6 +1,6 @@
 #!/bin/bash
 # Must be run from jetty root dir (above graal)
-# You need an env variable GRAAL_HOME, root of your graal distro (above bin)
+# You need an env variable GRAALVM_HOME, root of your graal distro (above bin)
 
 
 JETTY_SRC_D="$(pwd)"
@@ -28,7 +28,7 @@ warlibs=$(find war-exploded -name '*.jar' | paste -sd ':' -)
 # Libs from jetty.home
 libs=$(find distribution/lib -name '*.jar' | paste -sd ':' -)
 
-"$GRAAL_HOME/bin/native-image" \
+"$GRAALVM_HOME/bin/native-image" \
     -J-Xmx4g \
     -jar distribution/start.jar \
     --no-server \
